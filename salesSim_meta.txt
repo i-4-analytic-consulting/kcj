@@ -1,0 +1,29 @@
+1. attached is a file typical of a file (but smaller)  that i will to run a regression on.  the format is:
+
+        CustID  9. 
+        income  5.
+        gender  1. 
+        marital 1. '
+
+        offers  1. '
+        sales   1. '
+        VP        9.6 
+    
+the regression needs to estimate the model: 
+-sales = income gender marital 
+-no intercept on observations where offer = 1
+-dump the parameter estimates to a flat file i can then read.
+
+the shell i will write in c/c++ will:
+-generate test data files
+-issue a command line call to r to do the estimation 
+-read the parameter results 
+-display some graphs
+
+propose this:
+-set up R to import this standard file 
+-estimates the betas 
+-write beta estimates to a file
+
+once that is down we can coordinate my installing R with your help
+

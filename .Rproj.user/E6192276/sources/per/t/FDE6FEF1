@@ -1,0 +1,27 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1556839514254.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1914322854",
+    "id" : "FDE6FEF1",
+    "lastKnownWriteTime" : 1557821242,
+    "last_content_update" : 1557821242920,
+    "path" : "F:/R Projects/kcj/I00000001_import.r",
+    "project_path" : "I00000001_import.r",
+    "properties" : {
+        "cursorPosition" : "67,3",
+        "docOutlineVisible" : "0",
+        "scrollLine" : "49",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

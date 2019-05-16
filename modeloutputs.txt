@@ -1,0 +1,102 @@
+[1] "##########################"
+[1] "Multiple Linear Regression Example"
+[1] "##########################"
+
+Call:
+lm(formula = sales ~ income + gender + marital + 0, data = M)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-0.0007 -0.0007 -0.0007 -0.0007  0.9993 
+
+Coefficients: (1 not defined because of singularities)
+          Estimate Std. Error t value Pr(>|t|)   
+income   5.845e-06  2.206e-06   2.649  0.00808 **
+gender  -5.845e-04  5.776e-03  -0.101  0.91940   
+marital         NA         NA      NA       NA   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.02645 on 9999 degrees of freedom
+Multiple R-squared:  0.0007014,	Adjusted R-squared:  0.0005015 
+F-statistic: 3.509 on 2 and 9999 DF,  p-value: 0.02996
+
+
+Call:
+lm(formula = sales ~ income + gender + marital + 0, data = M)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-0.0007 -0.0007 -0.0007 -0.0007  0.9993 
+
+Coefficients: (1 not defined because of singularities)
+          Estimate Std. Error t value Pr(>|t|)   
+income   5.845e-06  2.206e-06   2.649  0.00808 **
+gender  -5.845e-04  5.776e-03  -0.101  0.91940   
+marital         NA         NA      NA       NA   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.02645 on 9999 degrees of freedom
+Multiple R-squared:  0.0007014,	Adjusted R-squared:  0.0005015 
+F-statistic: 3.509 on 2 and 9999 DF,  p-value: 0.02996
+
+List of 12
+ $ coefficients : Named num [1:3] 5.85e-06 -5.85e-04 NA
+  ..- attr(*, "names")= chr [1:3] "income" "gender" "marital"
+ $ residuals    : Named num [1:10001] 7.29e-15 3.48e-16 -2.90e-16 -2.90e-16 -2.90e-16 ...
+  ..- attr(*, "names")= chr [1:10001] "1" "2" "3" "4" ...
+ $ effects      : Named num [1:10001] -7.00e-02 2.68e-03 -4.01e-16 -4.01e-16 -4.01e-16 ...
+  ..- attr(*, "names")= chr [1:10001] "income" "gender" "" "" ...
+ $ rank         : int 2
+ $ fitted.values: Named num [1:10001] -7.29e-15 -3.48e-16 2.90e-16 2.90e-16 2.90e-16 ...
+  ..- attr(*, "names")= chr [1:10001] "1" "2" "3" "4" ...
+ $ assign       : int [1:3] 1 2 3
+ $ qr           :List of 5
+  ..$ qr   : num [1:10001, 1:3] -1.20e+04 8.34e-03 8.34e-03 8.34e-03 8.34e-03 ...
+  .. ..- attr(*, "dimnames")=List of 2
+  .. .. ..$ : chr [1:10001] "1" "2" "3" "4" ...
+  .. .. ..$ : chr [1:3] "income" "gender" "marital"
+  .. ..- attr(*, "assign")= int [1:3] 1 2 3
+  ..$ qraux: num [1:3] 1.01 1.22 1.22
+  ..$ pivot: int [1:3] 1 2 3
+  ..$ tol  : num 1e-07
+  ..$ rank : int 2
+  ..- attr(*, "class")= chr "qr"
+ $ df.residual  : int 9999
+ $ xlevels      : Named list()
+ $ call         : language lm(formula = sales ~ income + gender + marital + 0, data = M)
+ $ terms        :Classes 'terms', 'formula'  language sales ~ income + gender + marital + 0
+  .. ..- attr(*, "variables")= language list(sales, income, gender, marital)
+  .. ..- attr(*, "factors")= int [1:4, 1:3] 0 1 0 0 0 0 1 0 0 0 ...
+  .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. ..$ : chr [1:4] "sales" "income" "gender" "marital"
+  .. .. .. ..$ : chr [1:3] "income" "gender" "marital"
+  .. ..- attr(*, "term.labels")= chr [1:3] "income" "gender" "marital"
+  .. ..- attr(*, "order")= int [1:3] 1 1 1
+  .. ..- attr(*, "intercept")= int 0
+  .. ..- attr(*, "response")= int 1
+  .. ..- attr(*, ".Environment")=<environment: R_GlobalEnv> 
+  .. ..- attr(*, "predvars")= language list(sales, income, gender, marital)
+  .. ..- attr(*, "dataClasses")= Named chr [1:4] "numeric" "numeric" "numeric" "numeric"
+  .. .. ..- attr(*, "names")= chr [1:4] "sales" "income" "gender" "marital"
+ $ model        :'data.frame':	10001 obs. of  4 variables:
+  ..$ sales  : int [1:10001] 0 0 0 0 0 0 0 0 0 0 ...
+  ..$ income : int [1:10001] 100 100 100 100 100 100 100 100 100 100 ...
+  ..$ gender : int [1:10001] 1 1 1 1 1 1 1 1 1 1 ...
+  ..$ marital: int [1:10001] 1 1 1 1 1 1 1 1 1 1 ...
+  ..- attr(*, "terms")=Classes 'terms', 'formula'  language sales ~ income + gender + marital + 0
+  .. .. ..- attr(*, "variables")= language list(sales, income, gender, marital)
+  .. .. ..- attr(*, "factors")= int [1:4, 1:3] 0 1 0 0 0 0 1 0 0 0 ...
+  .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. ..$ : chr [1:4] "sales" "income" "gender" "marital"
+  .. .. .. .. ..$ : chr [1:3] "income" "gender" "marital"
+  .. .. ..- attr(*, "term.labels")= chr [1:3] "income" "gender" "marital"
+  .. .. ..- attr(*, "order")= int [1:3] 1 1 1
+  .. .. ..- attr(*, "intercept")= int 0
+  .. .. ..- attr(*, "response")= int 1
+  .. .. ..- attr(*, ".Environment")=<environment: R_GlobalEnv> 
+  .. .. ..- attr(*, "predvars")= language list(sales, income, gender, marital)
+  .. .. ..- attr(*, "dataClasses")= Named chr [1:4] "numeric" "numeric" "numeric" "numeric"
+  .. .. .. ..- attr(*, "names")= chr [1:4] "sales" "income" "gender" "marital"
+ - attr(*, "class")= chr "lm"

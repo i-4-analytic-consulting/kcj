@@ -1,0 +1,22 @@
+00000001 N V 0.0004164 0.00000
+00000002 N V 0.0005908 0.00000
+00000003 N V 0.0000872 0.00000
+00000004 N C 0.0002830 0.00440
+00000005 N V 0.0001464 0.00000
+00000006 N V 0.0000776 0.00000
+00000007 N V 0.0007104 0.00000
+
+columns:
+1, cust id
+2, managerial priority (A(bsolute), H(igh), N(ormal), D(oNotSend), U(nknown), X(tremAbsolute))
+3. pricing method (V(ariable), F(ixed), C(ontinent), U(known))
+4. prob of success
+5 contingent price
+
+i have a sas example o generating some test data, deriving the prob of success and generating
+a "base" ScoredFile (just columns 1 and 4)
+
+in actual operations, marketers or channel owners will provide/manipulate columns 2,3 ,5 to
+fine tune their  articulation of sophisticated  marketing plans
+
+i will look to you to have joe work with me on getting that example going in R
