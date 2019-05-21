@@ -20,9 +20,7 @@ I00000001 <- read_csv("I00000001.csv")
 
 # choose the CSV file you wish to import
 ?read.csv
-?row.names
-M <- read.csv(file.choose()) 
-sales_sim <- read_csv('Sales_Sim.csv', row.names = NULL)
+sales_sim <- read.csv(file.choose()) 
 
 
 
@@ -43,27 +41,14 @@ summary(sales_sim)
 head(sales_sim)
 tail(sales_sim)
 
-# manipulate data types
-sales_sim1 <- sales_sim %>%
-  # mutate_at('gender', factor)%>%
-  # mutate_at('marital', factor)%>%
-  names(sales_sim) <- c('custID', 'income', 'gender', 'marital', 'offers', 'sales', 'vp')
-
-# build linear regression model on full data
-# linearMod <- lm(dist ~ speed, data=cars) 
-# print(linearMod)
+# glm() model w/ no intercepts
 ?glm
-reg_model <- glm(sales ~ income, data = sales_sim)
-print(reg_model)
+multi.model<- glm(sales ~ income + gender + marital + 0, data = sales_sim)
 
-# multi.fit = lm(Sales~Spend+Month, data=dataset)
-# summary(multi.fit)
-multi.model<- lm(sales ~ income + gender + marital + 0, data = M)
+print(multi.model)
 summary(multi.model)
 str(multi.model)
 
-# export to .csv file 
-write.csv(multi.model,"sales_sim.csv")
 
 #Write model output to file
 writeOutput.F("Multiple Linear Regression Example", multi.model)
